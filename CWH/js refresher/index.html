@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js revision</title>
+    <script>
+        "use strict";
+        // d = 98
+        // var a = 34
+        // var a = "This is me"
+
+        // let a = 34
+        // let a = "This is me" // throws error
+
+        // const a = 34
+        // a = 67 Throws error
+
+        let a = 45 + 90
+
+        // Data Types
+        // - Numbers
+        // - Objects
+        // - Boolean
+        // - String
+        // - undefined
+        // - null
+        // console.log(a)
+
+        function hello() {
+            console.log("Hey Deepak")
+        }
+
+        // Objects
+        let obja = {
+            r: 34,
+            m: 46,
+            func: function myfunc(number) {
+                console.log("The number is " + number);
+            }
+        }
+
+        document.addEventListener("click", function click() {
+            console.log("Clicked")
+            // alert("Hello")
+            let conf = confirm("Are yo sure?")
+            console.log(conf)
+        })
+
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+
+        // }
+
+        let arr = [3, 56, 78, 43]
+        // arr.forEach
+
+        // Difference b/w arrow and normal function
+        let mobj = {
+            a: this,
+            // In this function this refers to the object mobj 
+            func1: function myfunc(number) {
+                console.log("The number is " + this)
+            },
+            // In this function this refers to the window object 
+            func2: (number) => {
+                console.log("The number is " + this)
+            }
+        }
+        mobj.func1();
+        mobj.func2();
+        console.log(mobj.a)
+
+        // Callback function
+        setTimeout(() => {
+            console.log('Yayy');
+        }, 3000);
+        console.log('Main neeche wali script hoon');
+
+    </script>
+</head>
+<body>
+    <h1>
+        I am learning Js
+    </h1>
+</body>
+</html>

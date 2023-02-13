@@ -1,0 +1,2 @@
+Component life cycle: https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+Website link:https://hackergoliath.github.io/TextUtils-React/
